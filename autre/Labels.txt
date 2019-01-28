@@ -1,0 +1,42 @@
+Situation de famille
+	cilibateur
+	marie
+	veuve
+	veuf
+	divorce
+Situation Service National
+	passer 
+	sourcis
+	mo3fa
+
+lieu etude 
+	salle 
+	sale tp
+	labo
+	atelier
+	cours
+Type Cong�
+	maladie
+	cld longue duree
+	sans solde (bidon ojra)
+	deces
+	obligation militaire
+	activit� judicieres
+	cong� parentale
+	autre
+
+type demande conge 
+	demande de conge
+	autorisation d'absence
+	regularisation d'absence
+
+type Absence
+	absence
+	conge
+	salle de sport
+	salle equip�
+	
+type filiere
+	enseignement generale
+	formation professionelle
+	

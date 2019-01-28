@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="600.0" type="BorderPane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtRecherche" maxWidth="720.0" minHeight="48.0" prefHeight="48.0" promptText="ابحث عن تعيين، طلب ، زبون ..." style="-fx-background-color: #ffffff; -fx-border-width: 1; -fx-border-color: #000000; -fx-border-radius: 24;">
+               <VBox.margin>
+                  <Insets left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
+            </TextField>
+            <ListView fx:id="listView" prefWidth="200.0" style="-fx-background-color: #ffffff;" VBox.vgrow="SOMETIMES">
+               <VBox.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="2.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+   </center>
+</fx:root>

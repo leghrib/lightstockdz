@@ -1,0 +1,11 @@
+*****************install Java Fx blugin in Jboss *******************************************************************************************************************************************************************************************************
+https://www.eclipse.org/efxclipse/install.html
+To install the e(fx)clipse tooling into your already existing Eclipse you have to add an Update site. There's no released yet available so you need to 
+add the release update-site
+http://download.eclipse.org/efxclipse/updates-released/2.4.0/site 
+and 
+http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/
+for the needed xtext dependencies.
+
+If you are not familiar with update-sites you can follow the short guide below or use a pre-packaged version
+****************************************************************************************************************************************************************************************************************************

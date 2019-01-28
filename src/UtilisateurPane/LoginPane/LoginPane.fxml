@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="407.0" maxWidth="593.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="407.0" prefWidth="593.0" style="-fx-border-width: 2; -fx-border-color: #bbbbff; -fx-background-color: #eeeeff;" type="StackPane" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" maxHeight="156.0" prefHeight="156.0" spacing="4.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="64.0" prefWidth="300.0" text="تسجيل الدخــــــــــــول" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Times New Roman Bold" size="28.0" />
+                     </font>
+                     <effect>
+                        <Reflection bottomOpacity="0.1" fraction="0.69" topOffset="-9.0" topOpacity="0.08" />
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="64.0" prefHeight="100.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Label maxHeight="32.0" maxWidth="128.0" minWidth="86.0" prefHeight="28.0" prefWidth="86.0" text="المستخدم">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboUtilisateur" editable="true" minWidth="86.0" prefHeight="32.0" prefWidth="256.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="64.0" prefHeight="100.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Label maxHeight="32.0" maxWidth="128.0" minWidth="86.0" prefHeight="28.0" prefWidth="86.0" text="كلمة المرور">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" minWidth="86.0" prefHeight="32.0" prefWidth="256.0" text="a" />
+               </children>
+            </HBox>
+            <HBox maxHeight="32.0" prefHeight="100.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Label fx:id="lblMessage" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="10.0" prefWidth="465.0" textAlignment="CENTER" textFill="#ff0505" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="86.0" prefHeight="256.0" spacing="8.0">
+               <children>
+                  <Button fx:id="btnConnexion" mnemonicParsing="false" onAction="#connexion" prefHeight="32.0" prefWidth="156.0" text="دخـــول">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="156.0" text="خروج">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="64.0" prefHeight="100.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Hyperlink fx:id="btnPasswordOublie" onAction="#passwordOublie" text="نسيت كلمة المرور ؟">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

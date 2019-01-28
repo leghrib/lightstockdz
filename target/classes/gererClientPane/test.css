@@ -1,0 +1,18 @@
+.label {
+	-fx-text-fill: #00006f;
+	-fx-background-color: #f3f2ff;
+	-fx-font-family: 'Tahoma';
+	-fx-font-size: 12;
+	-fx-font-weight: bold;
+}
+.check-box , .radio-button {
+	
+	-fx-text-fill: #00006f;
+	-fx-background-color: #f3f2ff;
+	-fx-font-family: 'Tahoma';
+	-fx-font-size: 12;
+	-fx-font-weight: bold;
+}
+.root {
+	
+}

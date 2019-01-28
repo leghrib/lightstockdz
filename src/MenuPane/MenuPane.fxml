@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<fx:root maxHeight="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: #fffff9;" type="MenuBar" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <menus>
+      <Menu fx:id="menuFichier" mnemonicParsing="false" text="ملف">
+         <items>
+            <MenuItem fx:id="menuItemSauvegarderLesDonnees" mnemonicParsing="false" text="حفظ المعلومات " />
+            <MenuItem fx:id="menuItemExtraitDeDonnees" mnemonicParsing="false" text="استخراج المعلومات" />
+            <MenuItem fx:id="menuItemChoisirImprimantes" mnemonicParsing="false" text="اختيار الطابعة" />
+            <MenuItem fx:id="menuItemReparationDeDonnes" mnemonicParsing="false" text="تنقية المعلومات" />
+            <MenuItem fx:id="menuItemReparationDeDonnees1" mnemonicParsing="false" text="تصليح المعلومات" />
+            <MenuItem fx:id="menuItem" mnemonicParsing="false" text="تحيين البرمجي" />
+            <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="خروج" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuEleve" mnemonicParsing="false" text="الزبائن">
+         <items>
+            <MenuItem fx:id="menuItemEleve" mnemonicParsing="false" text="معلومات الزبائن" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuEmploye" mnemonicParsing="false" text="الممونون">
+         <items>
+            <MenuItem fx:id="menuItemEmploye" mnemonicParsing="false" text="معلومات الممونين" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuMatiere" mnemonicParsing="false" text="السلع">
+         <items>
+            <MenuItem fx:id="menuItemMatiere" mnemonicParsing="false" text="تسيير السلع" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuEmploi" mnemonicParsing="false" text="البيع">
+         <items>
+            <MenuItem fx:id="menuItemEmploiSelonClasse" mnemonicParsing="false" text="البيع " />
+         </items>
+      </Menu>
+      <Menu fx:id="menuRapport" mnemonicParsing="false" text="التموين">
+         <items>
+            <MenuItem fx:id="menuItemRGF" mnemonicParsing="false" text="ادخال واردات جديدة" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuStatistiques" mnemonicParsing="false" text="الطلبات">
+         <items>
+            <MenuItem fx:id="menuItemPiramideAgeEleves" mnemonicParsing="false" text="طلب جديد" />
+         </items>
+      </Menu>
+      <Menu fx:id="menuImprimes" mnemonicParsing="false" text="مطبوعات" />
+      <Menu fx:id="MenuPrametrages" mnemonicParsing="false" text="وسائط">
+         <items>
+            <MenuItem fx:id="menuItemChangerMotDePasse" mnemonicParsing="false" text="تسيير المستخدمين" />
+            <MenuItem fx:id="menuItemDroitAccee" mnemonicParsing="false" text="تغيير مستوى رخص العبور" />
+            <MenuItem fx:id="menuItemInformationEtablissement" mnemonicParsing="false" text="معلومات المؤسسة" />
+            <MenuItem fx:id="menuItemOptions" mnemonicParsing="false" text="خيارات" />
+         </items>
+      </Menu>
+      <Menu fx:id="MenuApropos" mnemonicParsing="false" text="؟">
+         <items>
+            <MenuItem fx:id="menuItemApropos" mnemonicParsing="false" text="في ما يخص ..." />
+         </items>
+      </Menu>
+   </menus>
+</fx:root>

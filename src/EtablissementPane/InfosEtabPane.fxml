@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="836.0" type="BorderPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="معلومات المتجر">
+               <content>
+                  <BorderPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="485.0" prefWidth="413.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="4.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox fx:id="hboxMinistere1" alignment="CENTER" prefHeight="64.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="lblTitle" alignment="CENTER" text="معلومات المؤسسة التعليمية" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxMinistere" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="الوزارة">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtMinistere" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxDirection" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="مديرية التربية لولاية">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtDirection" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxCode" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="رمز المؤسسة">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtCode" minWidth="156.0" prefHeight="32.0" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxNomEtab" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="اسم المؤسسة">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtNomEtablissemnt" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxAdresse" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="العنوان">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtAdresse" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxDelevreA" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="تحرر الوثائق بـــ دائرة / بلدية">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtCommuneDaira" minWidth="156.0" prefHeight="32.0" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxNumCertSuiv" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="رقم الشهادة المدرسية الموالية">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtNumCertSuiv" minWidth="156.0" prefHeight="32.0" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxNomDirecteur" prefHeight="32.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="اسم المدير">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtNomDirecteur" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxNomDirecteur1" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Button fx:id="btnExit" alignment="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="86.0" text="خروج">
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnSave" alignment="CENTER" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="86.0" text="حفظ">
+                                       <HBox.margin>
+                                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets left="8.0" right="8.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </content>
+               <content>
+                  <BorderPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="485.0" prefWidth="413.0" style="-fx-background-color: #ffffff;">
+                     <center>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="4.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox fx:id="hboxMinistere1" alignment="CENTER" prefHeight="92.0" prefWidth="584.0">
+                                 <children>
+                                    <Label fx:id="lblTitle" alignment="CENTER" text="معلومات المتجر" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxMinistere" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="اسم المتجر">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtNom" minWidth="156.0" prefHeight="32.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxDirection" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="العنوان">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtAdresse" minWidth="156.0" prefHeight="32.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxCode" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="رقم الهاتف">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtTel" minWidth="156.0" prefHeight="32.0" prefWidth="0.0">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxNomEtab" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="الشعار">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtSlogan" minWidth="156.0" prefHeight="32.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hboxAdresse" prefHeight="50.0" prefWidth="200.0">
+                                 <children>
+                                    <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="الموقع">
+                                       <font>
+                                          <Font name="Arial Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtSiteWeb" minWidth="156.0" prefHeight="32.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER">
+                                 <children>
+                                    <Label text="أيقونة المتجر">
+                                       <font>
+                                          <Font name="Arial Bold" size="26.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane fx:id="stackPanePhoto" alignment="CENTER_RIGHT" minHeight="128.0" prefHeight="256.0" prefWidth="256.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets left="8.0" right="8.0" />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </content>
+          </Tab>
+          <Tab text="معلومات ايميل">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="282.0" prefWidth="424.0" spacing="4.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <HBox fx:id="hboxMinistere11" alignment="CENTER" prefHeight="55.0" prefWidth="584.0">
+                           <children>
+                              <Label fx:id="lblTitle1" alignment="CENTER" text="الايميل" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hboxMinistere12" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="الايميل ">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtEmail" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hboxDirection1" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="كلمة السر">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="txtpasswordEmail" minWidth="156.0" prefHeight="32.0" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hboxCode1" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label minWidth="128.0" prefHeight="32.0" prefWidth="156.0" text="الخادم">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtsmtp" minWidth="156.0" prefHeight="32.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></TextField>
+                              <Label alignment="CENTER" minWidth="81.0" prefHeight="32.0" prefWidth="81.0" text="بورت" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtPort" minWidth="156.0" prefHeight="32.0" prefWidth="191.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" right="8.0" />
+                     </padding>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab text="مطبوعات">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="282.0" prefWidth="424.0" spacing="4.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <HBox fx:id="hboxMinistere111" alignment="CENTER" prefHeight="55.0" prefWidth="584.0">
+                           <children>
+                              <Label fx:id="lblTitle11" alignment="CENTER" text="المــطبوعــات" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="389.0" prefWidth="620.0" style="-fx-border-color: black;">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea fx:id="txtEntete" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Arial Bold" size="16.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" right="8.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <HBox fx:id="hboxNomDirecteur1" alignment="CENTER" maxHeight="1.7976931348623157E308" prefWidth="200.0" style="-fx-background-color: #eeeeee;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnExit" alignment="CENTER" mnemonicParsing="false" onAction="#exit" prefHeight="32.0" prefWidth="86.0" text="خروج">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSave" alignment="CENTER" mnemonicParsing="false" onAction="#save" prefHeight="32.0" prefWidth="86.0" text="حفظ">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</fx:root>

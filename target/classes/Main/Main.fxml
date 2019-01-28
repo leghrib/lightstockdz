@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root nodeOrientation="RIGHT_TO_LEFT" prefHeight="500.0" prefWidth="1200.0" style="-fx-border-width: 1; -fx-border-color: blue;" type="BorderPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <StackPane maxWidth="1.7976931348623157E308" prefHeight="4.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <StackPane fx:id="stackPaneCenter" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="TOP_RIGHT" maxHeight="32.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="stackPaneMenu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            <StackPane fx:id="stackProfile" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets top="2.0" />
+               </HBox.margin>
+            </StackPane>
+            <StackPane fx:id="stackPaneMove" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="128.0" style="-fx-background-color: #ffffff;" />
+            <Button fx:id="btnMinimize" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" mnemonicParsing="false" onAction="#minimize" prefHeight="32.0" text="__">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnexitFullScreen" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" mnemonicParsing="false" onAction="#exitFullScreen" prefHeight="32.0">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnClose" maxHeight="32.0" maxWidth="32.0" minHeight="32.0" minWidth="32.0" mnemonicParsing="false" onAction="#close" prefHeight="32.0" prefWidth="32.0" text="X">
+               <HBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox fx:id="vboxTools" alignment="BOTTOM_CENTER" minWidth="32.0" prefHeight="200.0" prefWidth="48.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <MenuButton fx:id="btnStat" accessibleRole="BUTTON" mnemonicParsing="false" popupSide="TOP" prefHeight="32.0" prefWidth="48.0" style="-fx-background-color: trasparent;">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#signaler">
+                     <graphic>
+                        <Pane prefHeight="200.0" prefWidth="200.0" />
+                     </graphic></MenuItem>
+               </items>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </MenuButton>
+            <MenuButton fx:id="btnMenuAutre" accessibleRole="BUTTON" mnemonicParsing="false" popupSide="TOP" prefHeight="32.0" prefWidth="48.0" style="-fx-background-color: trasparent;">
+              <items>
+                <MenuItem fx:id="menuItemSignaler" mnemonicParsing="false" onAction="#signaler" text="الابلاغ عن مشكلة" />
+                <MenuItem fx:id="menuItemAPropos" mnemonicParsing="false" onAction="#Apropos" text="عن البرنامج" />
+              </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </MenuButton>
+            <Button fx:id="btnBackMenu" mnemonicParsing="false" onAction="#backMenu" prefHeight="32.0" prefWidth="48.0" style="-fx-background-color: transparent;">
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+</fx:root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+		<sql-type jdbc-type="VARCHAR" hibernate-type="string"></sql-type>
+	</type-mapping>
+	<table-filter match-name="article" match-catalog="LightStock"></table-filter>
+	<table-filter match-name="client" match-catalog="LightStock"></table-filter>
+	<table-filter match-name="cmd" match-catalog="LightStock"></table-filter>
+	<table-filter match-name="cmdarticle" match-catalog="LightStock"></table-filter>
+	<table-filter match-name="utilisateur" match-catalog="LightStock"></table-filter>
+</hibernate-reverse-engineering>
