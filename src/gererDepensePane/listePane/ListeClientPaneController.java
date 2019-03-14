@@ -5,15 +5,16 @@ import java.util.ResourceBundle;
 
 import org.hibernate.Session;
 
- import CRUD.NewHibernateUtil;
+import CRUD.ClientCRUD;
+import CRUD.NewHibernateUtil;
 import ICON.ICONE;
+import Modele.Client;
 import Modele.Depense;
 import UTILS.JfxUtils;
 import UTILS.MyCompenents.MyToolTip;
 import UTILS.Traduction.G;
 import eu.hansolo.enzo.notification.Notification.Notifier;
 import gererClientPane.gererElementPane.GererClientPaneController;
-import impression.impressionCarteClient;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -32,14 +33,12 @@ import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
-import javafx.scene.control.Tooltip;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
-import javafx.scene.text.Font;
 
 public class ListeClientPaneController extends StackPane implements Initializable {
 	@FXML

@@ -5,11 +5,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-import com.barcode_coder.java_barcode.Barcode;
-import com.barcode_coder.java_barcode.BarcodeFactory;
-import com.barcode_coder.java_barcode.BarcodeType;
+import com.lowagie.text.pdf.Barcode;
+import com.lowagie.text.pdf.Barcode128;
 
 import UTILS.Parametres.Parameter;
+import net.sf.jasperreports.components.barcode4j.BarcodeFillFactory;
 
 public class CodeBarUTILS {
 	// 11 to 99
@@ -22,7 +22,8 @@ public class CodeBarUTILS {
 
 		String codeBar = IDType + "" + completeWithZero_9(ID_Object);
 		System.out.println("codebar  : " + codeBar);
-		Barcode b = BarcodeFactory.createBarcode(BarcodeType.Code11, codeBar);
+		//dependency changed
+		//Barcode b = BarcodeFillFactory.createBarcode(Barcode128.CODE128, codeBar);
 		File file = null;
 
 		try {
@@ -32,9 +33,10 @@ public class CodeBarUTILS {
 			e.printStackTrace();
 		}
 
-		if (b.export("png", 1, 20, Parameter.TEST_MODE, file.getAbsolutePath())) {
-			return file;
-		} else {
+//		if (b.export("png", 1, 20, Parameter.TEST_MODE, file.getAbsolutePath())) {
+//			return file;
+//		} else
+		{
 			return null;
 		}
 	}
