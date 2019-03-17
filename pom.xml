@@ -37,11 +37,13 @@
 
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
+		<!-- https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports -->
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
-			<version>5.6.0</version>
+			<version>5.0.0</version>
 		</dependency>
+
 
 		<dependency>
 			<groupId>mysql</groupId>

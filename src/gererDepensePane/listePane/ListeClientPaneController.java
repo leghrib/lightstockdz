@@ -3,18 +3,6 @@ package gererDepensePane.listePane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import org.hibernate.Session;
-
-import CRUD.ClientCRUD;
-import CRUD.NewHibernateUtil;
-import ICON.ICONE;
-import Modele.Client;
-import Modele.Depense;
-import UTILS.JfxUtils;
-import UTILS.MyCompenents.MyToolTip;
-import UTILS.Traduction.G;
-import eu.hansolo.enzo.notification.Notification.Notifier;
-import gererClientPane.gererElementPane.GererClientPaneController;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -39,6 +27,19 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
+
+import org.hibernate.Session;
+
+import CRUD.ClientCRUD;
+import CRUD.NewHibernateUtil;
+import ICON.ICONE;
+import Modele.Client;
+import Modele.Depense;
+import UTILS.JfxUtils;
+import UTILS.MyCompenents.MyToolTip;
+import UTILS.Traduction.G;
+import eu.hansolo.enzo.notification.Notification.Notifier;
+import gererClientPane.gererElementPane.GererClientPaneController;
 
 public class ListeClientPaneController extends StackPane implements Initializable {
 	@FXML
@@ -129,7 +130,7 @@ public class ListeClientPaneController extends StackPane implements Initializabl
 	@FXML
 	void supprimer(ActionEvent event) {
 
-		Client client = table.getSelectionModel().getSelectedItem();
+		Depense client = table.getSelectionModel().getSelectedItem();
 		if (client == null) {
 			UTILS.UTILS.runAlert(AlertType.ERROR, "تنبيه", "اختر العنصر التي تريد حذفه", "اختر العنصر التي تريد حذفه");
 			return;
@@ -307,7 +308,7 @@ public class ListeClientPaneController extends StackPane implements Initializabl
 
 	}
 
-	protected void chargerEleve(Client c) {
+	protected void chargerEleve(Depense c) {
 
 		if (exist(c)) {
 			focusIn(c);
@@ -361,7 +362,7 @@ public class ListeClientPaneController extends StackPane implements Initializabl
 
 	}
 
-	private boolean exist(Client insc) {
+	private boolean exist(Depense insc) {
 		ObservableList<Tab> list = tabPane.getTabs();
 		for (Tab tab : list) {
 			if (tab.getContent() instanceof GererClientPaneController) {

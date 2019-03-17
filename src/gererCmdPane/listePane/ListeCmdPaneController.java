@@ -1,22 +1,11 @@
 package gererCmdPane.listePane;
 
+import gererCmdPane.gererElementPane.GererCmdPaneController;
+import impression.impressionCmd;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import org.hibernate.Session;
-import org.openxmlformats.schemas.presentationml.x2006.main.impl.CmLstDocumentImpl;
-
-import CRUD.CmdCRUD;
-import CRUD.NewHibernateUtil;
-import ICON.ICONE;
-import Modele.Cmd;
-import UTILS.JfxUtils;
-import UTILS.UTILS;
-import UTILS.MyCompenents.MyToolTip;
-import UTILS.Traduction.G;
-import eu.hansolo.enzo.notification.Notification.Notifier;
-import gererCmdPane.gererElementPane.GererCmdPaneController;
-import impression.impressionCmd;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -41,8 +30,19 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.StackPane;
-import javafx.util.StringConverter;
 import net.sf.jasperreports.engine.JRException;
+
+import org.hibernate.Session;
+
+import CRUD.CmdCRUD;
+import CRUD.NewHibernateUtil;
+import ICON.ICONE;
+import Modele.Cmd;
+import UTILS.JfxUtils;
+import UTILS.UTILS;
+import UTILS.MyCompenents.MyToolTip;
+import UTILS.Traduction.G;
+import eu.hansolo.enzo.notification.Notification.Notifier;
 
 public class ListeCmdPaneController extends StackPane implements Initializable {
 	@FXML
